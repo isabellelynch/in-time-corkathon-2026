@@ -1,0 +1,250 @@
+{
+ "source_id": "cso_trade",
+ "endpoint": "https://ws.cso.ie/public/api.jsonrpc (PxStat.Data.Cube_API.ReadDataset, TSM06)",
+ "licence": {
+  "name": "CC BY 4.0",
+  "url": "https://www.cso.ie/en/aboutus/lgdp/csodatapolicies/copyrightpolicy/",
+  "attribution": "Source: Central Statistics Office, Ireland (TSM06). Licence terms to confirm on linked page."
+ },
+ "status": "ok",
+ "retrieved_at": "2026-11-07T10:46:00+00:00",
+ "reference_period": "2026-08",
+ "published_at": "2026-10-16T11:00:00.000Z",
+ "reason": null,
+ "records": [
+  {
+   "reference_period": "2025-08",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 924625.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-08",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 96305.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-09",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 964965.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-09",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 114156.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-10",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 1039427.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-10",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 107038.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-11",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 991620.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-11",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 108366.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-12",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 928190.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2025-12",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 82153.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-01",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 839615.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-01",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 78701.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-02",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 817396.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-02",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 79654.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-03",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 943926.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-03",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 85271.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-04",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 911600.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-04",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 75495.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-05",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 912615.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-05",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 80160.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-06",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 860626.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-06",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 78280.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-07",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 864579.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-07",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 80754.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-08",
+   "commodity_code": "001",
+   "commodity": "Total food and live animals (0)",
+   "imports_value": 848785.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  },
+  {
+   "reference_period": "2026-08",
+   "commodity_code": "001008",
+   "commodity": "Coffee, tea, cocoa, spices and manufactures thereof (07)",
+   "imports_value": 80264.0,
+   "unit": "Euro Thousand",
+   "published_at": "2026-10-16T11:00:00.000Z",
+   "retrieved_at": "2026-11-07T10:46:00+00:00"
+  }
+ ]
+}

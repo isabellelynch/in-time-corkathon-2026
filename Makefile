@@ -1,3 +1,8 @@
-.PHONY: test
+.PHONY: test snapshot
+PY ?= python3
+
 test:
-	@echo "No tests yet: stack not chosen."
+	PYTHONPATH=src $(PY) -m unittest discover -s tests -t . -v
+
+snapshot:
+	PYTHONPATH=src $(PY) -m corkathon.snapshot

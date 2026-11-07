@@ -33,10 +33,13 @@ Corkathon 2026, sponsored by FRAME (accounting firm, Cork).
 - Never commit API keys, tokens, or scraped personal data.
 
 ## Run / test
-Stack not chosen yet (waiting on Tran's concept pick). Until then:
+Python 3.12, stdlib only (no third-party packages, so no lockfile yet). Code in `src/corkathon`.
 ```bash
 cp .env.example .env    # fill locally, never commit
-make test               # placeholder; replaced when the stack lands
+make test               # offline unittest suite against committed fixtures/snapshots
+make snapshot           # live fetch, writes data/snapshots/<source>/<YYYY-MM-DD>.json
+SNAPSHOT=1 ...          # loaders read the newest committed snapshot, never the network
 ```
-CI runs osv-scanner on every PR (`.github/workflows/ci.yml`).
-Update this section in the same PR that introduces the stack.
+Loaders never raise: a live failure falls back to the newest snapshot (status `snapshot`), else `unavailable`.
+`src/corkathon/sources/base.py` is a temporary minimal base, to be replaced by Engineering Lead's PR A.
+CI runs `make test` on Python 3.12 and osv-scanner on every PR (`.github/workflows/ci.yml`).
