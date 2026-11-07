@@ -1,7 +1,5 @@
 # Pitch and demo plan
 
-> Draft, updated 11:50 for the importer direction and the live decision engine. Fill in the [brackets]. Owner: Isabelle.
-
 ## One-line idea
 
 **For Ireland's ~49,000 small importers, who find out about port strikes and currency swings too late, we check their own shipping route against live news, official port and carrier notices and ECB exchange rates, and tell them in plain English whether their imports will be late or dearer, with one next step and every source dated.**

@@ -1,7 +1,5 @@
 # Market
 
-> Owner: Isabelle. Figures are sourced; anything not yet tested with real users is marked as a **hypothesis**.
-
 ## The customer
 
 **Primary user: the owner or buyer at a small Irish importer.** A coffee roaster, a homewares shop, a bike dealer, a food wholesaler. They order by sea from outside the EU, often pay in dollars or sterling, and have no logistics team or treasury desk.
