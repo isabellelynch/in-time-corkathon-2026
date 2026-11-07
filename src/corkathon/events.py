@@ -30,6 +30,7 @@ CONFIRMING_DOMAINS = frozenset({
     "evergreen-line.com", "cosco.com", "yangming.com", "zim.com",
     "portofcork.ie", "dublinport.ie", "portofrotterdam.com", "portofantwerpbruges.com",
     "hamburg-port-authority.de", "mpa.gov.sg", "suezcanal.gov.eg",
+    "hha.co.uk", "portoffelixstowe.co.uk",
 })
 
 
@@ -70,6 +71,18 @@ def _event_type(text: str) -> str | None:
     return next((w for w in EVENT_TERMS if re.search(r"\b" + re.escape(w), t)), None)
 
 
+# Headlines that name a port but are about something else. "Santos" is also a
+# football club, "Cork" a county team and a material. A match needs a disruption
+# word in the headline itself, and none of these off-topic words.
+OFF_TOPIC = ("fc", "football", "soccer", "hurling", "gaa", "league", "cup final", "goal",
+             "transfer window", "wine", "stopper", "election", "festival")
+
+
+def relevant(title: str) -> bool:
+    t = title.lower()
+    return _event_type(t) is not None and not any(re.search(r"\b" + re.escape(w) + r"\b", t) for w in OFF_TOPIC)
+
+
 def _dt(s: str) -> datetime:
     return datetime.strptime(s[:10], "%Y-%m-%d")
 
@@ -87,6 +100,13 @@ def port_query(port: str) -> str:
     """GDELT query for ONE public port. Cache entries are per port, never per route."""
     terms = '("port strike" OR "port closure" OR "port congestion" OR "shipping disruption" OR "vessel diverted" OR "blank sailing")'
     return f'{terms} "{port}"'
+
+
+def official_query(port: str) -> str:
+    """GDELT query restricted to the official carrier and port domains that may
+    confirm an event. Results are still matched and checked by filter_events."""
+    domains = " OR ".join(f"domain:{d}" for d in sorted(CONFIRMING_DOMAINS))
+    return f'{port_query(port)} ({domains})'
 
 
 def lane_query(lane: Lane) -> str:
@@ -117,7 +137,7 @@ def filter_events(records: list[dict], lane: Lane, window_start: date, window_en
         if _dt(r["last_seen"]) < lo or _dt(r["first_seen"]) > hi:
             continue
         hits = [p for p in places if _mentions(r.get("title", ""), p)]
-        if hits:
+        if hits and relevant(r.get("title", "")):
             kept.append((r, hits))
     # Merge incidents from different queries that describe the same story.
     groups: list[list[tuple[dict, list[str]]]] = []
@@ -147,7 +167,8 @@ def filter_events(records: list[dict], lane: Lane, window_start: date, window_en
             first_seen=min(r["first_seen"] for r, _ in g), last_seen=max(r["last_seen"] for r, _ in g),
             report_count=sum(r.get("article_count", 1) for r, _ in g), source_urls=urls[:5],
             status="confirmed" if confirmed else "reported",
-            match_reason="names " + ", ".join(matched) + " on your confirmed route",
+            match_reason="names " + ", ".join(matched) + " on your confirmed route and mentions "
+                         + (_event_type(g[0][0].get("title", "")) or "a disruption"),
             domains=sorted({d for r, _ in g for d in r.get("domains", [])}),
             confirmation_url=conf,
         ))
