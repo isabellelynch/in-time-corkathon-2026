@@ -65,6 +65,7 @@ Write the expected result for each before demo day so you can spot a bug.
 
 ## Likely judge questions
 
+- *"Hasn't this been done before?"* → Big companies have tools like Resilinc and GoComet that do this for logistics teams. Niamh doesn't have a logistics team: In Time gives a small importer the same early warning, in plain English, without any setup. (Say "we haven't found one for small importers", not "nobody does this". See market.md.)
 - *"How is this different from a news alert?"* → It's matched to your route and dates, separates rumour from confirmation, and ties it to your own stock and invoice.
 - *"How do you know the strike affects my ship?"* → We don't, and we say so. We tell you to check with your forwarder, with the reason.
 - *"Why didn't it raise an alert?"* → Because no official source has confirmed it. We only alert on a carrier or port notice, and we won't use those until their reuse terms are checked. Until then we say what we can't check and link you to it.
