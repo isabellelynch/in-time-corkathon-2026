@@ -1,7 +1,5 @@
 # Brand
 
-> Owner: Isabelle. Records the look the app has. **Updated 7 Nov, 13:10:** Khoa asked to scrap Night Harbour, so the app now uses the "Soft Pill" theme in `web/styles.css` (pill shapes and soft cards after morphin-ui, Inter, warm neutrals in light, pure black in dark). The one change this file proposes is the product name, pending Khoi's OK.
-
 ## Name
 
 **In Time**

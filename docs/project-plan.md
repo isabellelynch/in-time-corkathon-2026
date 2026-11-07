@@ -1,7 +1,5 @@
 # Project plan
 
-> Living plan for Corkathon 2026, updated 11:50. Fill in the [brackets]; the event schedule isn't in the repo.
-
 ## Goal
 
 By the demo, a small Irish importer enters one shipment route and gets a sourced, dated, plain-English answer to "Will my imports be late or dearer this month?", with one next step, running on real data.

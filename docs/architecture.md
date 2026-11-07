@@ -1,7 +1,5 @@
 # How the app works
 
-> Describes the code on `main` as of 7 Nov 2026, 11:45. Update it in the same PR whenever the design changes.
-
 ## The idea in one line
 
 A small Irish importer enters one shipment route, their invoice currency and how long their stock lasts, and gets a plain-English answer to **"Will my imports be late or dearer this month?"**, with one next step and every source dated.
