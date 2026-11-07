@@ -1,0 +1,24 @@
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make test
+  osv-scanner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: osv-scanner
+        run: |
+          curl -fsSL -o osv https://github.com/google/osv-scanner/releases/download/v2.7.0/osv-scanner_linux_amd64
+          chmod +x osv
+          ./osv scan source -r . || code=$?
+          # 128 = no lockfiles found yet (fine until the stack lands)
+          if [ "${code:-0}" != "0" ] && [ "${code}" != "128" ]; then exit $code; fi
