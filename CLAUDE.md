@@ -23,7 +23,7 @@ Corkathon 2026, sponsored by FRAME (accounting firm, Cork).
 - **Presentation/demo:** show the data driving the result live. Clarity beats polish.
 
 ## Team rules
-- Every change is a small PR. CI (tests + osv-scanner) must be green; Engineering Lead reviews and merges.
+- Every change is a small PR. CI (tests + osv-scanner) must be green; Engineering Lead reviews; merging needs Tran's OK (no standing merge permission on this repo).
 - Nothing public, deployed, or sent outside the team without Tran's explicit yes.
 - No secrets in the repo. Use `.env` (git-ignored); document keys in `.env.example`.
 - Pin every dependency to an exact version and commit the lockfile. New packages need: pinned version, osv-scanner clean, install-script review, SWE sign-off.
