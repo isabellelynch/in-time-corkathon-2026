@@ -1,3 +1,13 @@
+> **Fork of a Corkathon 2026 team project** (original: [khoivd-dot/Corkathon-2026](https://github.com/khoivd-dot/Corkathon-2026)).
+> Engineering by Khoi ([@khoivd-dot](https://github.com/khoivd-dot)) and other contributors.
+>
+> **My role: product, research and pitch**
+> - Named the product (*In Time*) and wrote its positioning and brand voice ([brand.md](docs/brand.md))
+> - Researched the market: ~49,600 Irish importers, 98% SMEs (CSO), plus competitors and who pays ([market.md](docs/market.md))
+> - Wrote the project documentation: plan, architecture, data sources guide, contributing guide, and the README's Limits section
+> - Wrote the pitch, demo script and judge Q&A ([pitch deck](docs/pitch/In-Time-pitch.pdf))
+> - Tested the app as a user and found two bugs that crashed it on Windows
+
 # In Time
 
 *Find out before your stock runs out.*
